@@ -6,7 +6,7 @@ class SortedList {
 
   add(item) {
     this.items.push(item);
-    this.items.sort();
+    this.items.sort((a, b) => a - b);
     this.length = this.items.length;
   }
 
@@ -29,16 +29,31 @@ class SortedList {
   }
 
   min() {
-    // ...
+    if (this.items.length === 0) {
+      throw new Error("EmptySortedList");
+    } else {
+      //const minimum = this.items;
+      return this.items[0];
+    }
   }
+  
 
   sum() {
-    // ...
+    if (this.items.length === 0) {
+      return 0;
+    } else{
+    const total = this.items.reduce((accumulator, value) => accumulator + value, 0);
+    return total;
+  }
   }
 
   average() {
-    // ...
+    if (this.items.length === 0) {
+      throw new Error("EmptySortedList");
+    } else{
+    const average = this.sum() / this.length;
+    return average
   }
 }
-
+}
 module.exports = SortedList;
