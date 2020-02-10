@@ -40,8 +40,8 @@ class SortedList {
     if (this.items.length < 1) {
       return 0;
     } else {
-      return this.items.reduce(function(acumulador, valorAtual, indice, array) {
-        return acumulador + valorAtual;
+      return this.items.reduce(function(a, b) {
+        return a + b;
       }, 0);
     }
   }
