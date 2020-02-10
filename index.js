@@ -24,10 +24,7 @@ class SortedList {
     if (this.items.length === 0) {
       throw new Error('EmptySortedList');
     } else {
-      this.items.sort(function(a, b) {
-        return a - b;
-      });
-      return this.items[this.items.length - 1];
+      return Math.max(...this.items);
     }
   }
 
@@ -35,10 +32,7 @@ class SortedList {
     if (this.items.length === 0) {
       throw new Error('EmptySortedList');
     } else {
-      this.items.sort(function(a, b) {
-        return a - b;
-      });
-      return this.items[0];
+      return Math.min(...this.items);
     }
   }
 
