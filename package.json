@@ -9,5 +9,18 @@
   },
   "dependencies": {
     "mocha": "^7.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinepasetti/lab-intro-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alinepasetti/lab-intro-node/issues"
+  },
+  "homepage": "https://github.com/alinepasetti/lab-intro-node#readme"
 }
