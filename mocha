@@ -1,0 +1,126 @@
+
+> lab-intro-node@2.0.0 test /Users/tiagomendes/node-examples/node-introduction/lab-intro-node
+> mocha
+
+
+
+  SortedList
+    Constructor
+      ✓ should have items and length properties
+    #add(x)
+      1) should add a single value to SortedList
+      2) should add a third value to SortedList
+      3) should add a value while keeping the list sorted
+    #load(i)
+      4) "before each" hook for "should return an OutOfBounds exception if there is no element in that position"
+    #max()
+      5) should return an EmptySortedList exception if there are no elements in the list
+      6) should return the max (highest) value in the list
+    #min()
+      7) should return an EmptySortedList exception if there is no elements in the list
+      8) should return the min (lowest) value in the list
+    #sum()
+      9) should return the sum of all elements in the list
+      10) should return 0 for an empty sorted list
+    #avg()
+      11) should return an EmptySortedList exception if there are no elements
+      12) should return the average of elements in the list
+
+
+  1 passing (13ms)
+  12 failing
+
+  1) SortedList
+       #add(x)
+         should add a single value to SortedList:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:26:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  2) SortedList
+       #add(x)
+         should add a third value to SortedList:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:31:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  3) SortedList
+       #add(x)
+         should add a value while keeping the list sorted:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:38:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  4) SortedList
+       #load(i)
+         "before each" hook for "should return an OutOfBounds exception if there is no element in that position":
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:55:14)
+      at processImmediate (internal/timers.js:439:21)
+
+  5) SortedList
+       #max()
+         should return an EmptySortedList exception if there are no elements in the list:
+     AssertionError [ERR_ASSERTION]: Missing expected exception (Error): EmptySortedList
+      at Context.<anonymous> (test/index.spec.js:82:14)
+      at processImmediate (internal/timers.js:439:21)
+
+  6) SortedList
+       #max()
+         should return the max (highest) value in the list:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:92:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  7) SortedList
+       #min()
+         should return an EmptySortedList exception if there is no elements in the list:
+     AssertionError [ERR_ASSERTION]: Missing expected exception (Error): EmptySortedList
+      at Context.<anonymous> (test/index.spec.js:106:14)
+      at processImmediate (internal/timers.js:439:21)
+
+  8) SortedList
+       #min()
+         should return the min (lowest) value in the list:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:116:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  9) SortedList
+       #sum()
+         should return the sum of all elements in the list:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:130:12)
+      at processImmediate (internal/timers.js:439:21)
+
+  10) SortedList
+       #sum()
+         should return 0 for an empty sorted list:
+     AssertionError [ERR_ASSERTION]: undefined == 0
+      at Context.<anonymous> (test/index.spec.js:137:14)
+      at processImmediate (internal/timers.js:439:21)
+
+  11) SortedList
+       #avg()
+         should return an EmptySortedList exception if there are no elements:
+     AssertionError [ERR_ASSERTION]: Missing expected exception (Error): EmptySortedList
+      at Context.<anonymous> (test/index.spec.js:149:14)
+      at processImmediate (internal/timers.js:439:21)
+
+  12) SortedList
+       #avg()
+         should return the average of elements in the list:
+     ReferenceError: i is not defined
+      at SortedList.add (index.js:8:31)
+      at Context.<anonymous> (test/index.spec.js:159:12)
+      at processImmediate (internal/timers.js:439:21)
+
+
+
