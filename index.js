@@ -37,11 +37,19 @@ class SortedList {
   }
 
   sum() {
-    // ...
+    if (this.length === 0) {
+      return 0;
+    } else {
+      return this.items.reduce((acc, x) => acc + x, 0);
+    }
   }
 
   avg() {
-    // ...
+    if (this.length === 0) {
+      throw new Error('EmptySortedList');
+    } else {
+      return this.sum() / this.length;
+    }
   }
 }
 
