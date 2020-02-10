@@ -50,7 +50,7 @@ class SortedList {
 
 	avg() {
 		if (this.items.length != 0) {
-			return this.items.reduce((acc, x) => acc + x, 0) / this.items.length;
+			return this.sum() / this.items.length;
 		} else {
 			throw new Error('EmptySortedList');
 		}
